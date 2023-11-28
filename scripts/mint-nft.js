@@ -5,7 +5,7 @@ const API_URL = process.env.API_URL;
 const PRIVATE_KEY = `0x${process.env.PRIVATE_KEY}`;
 const PUBLIC_KEY = process.env.PUBLIC_KEY;
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
-const web3 = createAlchemyWeb3(API_URL);
+const web3 = createAlchemyWeb3(API_URL);  //return web3 instance to interact with ethereum blockchain through alchemy
 
 const contract = require("../artifacts/contracts/MyToken.sol/MyToken.json");
 
